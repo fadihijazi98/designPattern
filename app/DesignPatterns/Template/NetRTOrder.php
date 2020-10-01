@@ -4,7 +4,7 @@
 namespace App\DesignPatterns\Template;
 
 
-class NetOrder extends Order
+class NetRTOrder extends RTOrder
 {
 
     public function isOnlinePayment()

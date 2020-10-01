@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="96373a67-8ffb-432f-aa7a-95e2ae3326c4" name="Default Changelist" comment="" />
+    <list default="true" id="96373a67-8ffb-432f-aa7a-95e2ae3326c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DesignPatterns/Strategy/DatabaseLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DesignPatterns/Strategy/FileLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DesignPatterns/Strategy/Log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DesignPatterns/Strategy/RTAppLogger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DesignPatterns/Strategy/WebServiceLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DesignPatterns/Adapter/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DesignPatterns/Adapter/RTPerson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DesignPatterns/Template/NetOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DesignPatterns/Template/NetRTOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DesignPatterns/Template/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DesignPatterns/Template/RTOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DesignPatterns/Template/StoreOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DesignPatterns/Template/StoreRTOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +49,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -132,8 +167,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/DesignPatterns/Adapter" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/DesignPatterns/Adapter" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -158,24 +201,53 @@
       <workItem from="1597676859489" duration="1648000" />
       <workItem from="1597751651214" duration="743000" />
       <workItem from="1598197827620" duration="2084000" />
+      <workItem from="1601449849737" duration="9162000" />
+      <workItem from="1601552716323" duration="1954000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="770" y="225" width="442" height="685" key="#com.intellij.ide.util.MemberChooser" timestamp="1601555131314">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="770" y="225" width="442" height="685" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1601555131314" />
+    <state x="749" y="271" width="475" height="578" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601555122295">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="749" y="271" width="475" height="578" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1601555122295" />
     <state x="692" y="465" width="597" height="191" key="ComposerInitDialogKey" timestamp="1597408854960">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="692" y="465" width="597" height="191" key="ComposerInitDialogKey/72.27.1848.1053@72.27.1848.1053" timestamp="1597408854960" />
+    <state x="582" y="250" width="828" height="641" key="NewPhpClassDialog" timestamp="1601555177903">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="582" y="250" width="828" height="641" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1601555177903" />
+    <state x="744" y="474" width="494" height="166" key="NewPhpFileDialog" timestamp="1601450139783">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="744" y="474" width="494" height="166" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1601450139783" />
     <state x="537" y="57" width="1125" height="912" key="SettingsEditor" timestamp="1596962576544">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="537" y="57" width="1125" height="912" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1596962576544" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1598199408811">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1601468151833">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1598199408811" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1601468151833" />
   </component>
 </project>

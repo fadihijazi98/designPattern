@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\DesignPatterns\Adapter;
 use App\DesignPatterns\Template;
+use App\DesignPatterns\Strategy;
+//RT: run time
 
 Route::get('/', function () {
     dd("Hello with valet, new domain name");
@@ -19,20 +21,32 @@ Route::get('/adapter', function () {
     $nick = new Adapter\Nick;
     $nickAdapter = new Adapter\ReaderAdapter($nick);
 
-    $person = new Adapter\Person($book);
+    $person = new Adapter\RTPerson($book);
     dd($person->read());
 });
 
 Route::get('/template', function () {
     // the main purpose for template according my understand it's reduce the duplicate
-    $orderType = "online";// "net";
+    $orderType = /*"online";//*/ "net";
     if($orderType === "online")
-        $order = new Template\NetOrder();
+        $order = new Template\NetRTOrder();
     else
-        $order = new Template\StoreOrder();
+        $order = new Template\StoreRTOrder();
     dd($order->make());
 });
 
+Route::get("/strategy", function () {
+
+    $data = "!!{some information to be register}!!";
+    $logger = new Strategy\RTAppLogger();
+
+    $fileLogger = new Strategy\FileLogger();
+    $databaseLogger = new Strategy\DatabaseLogger();
+    $webserviceLogger = new Strategy\WebServiceLogger();
+
+    dd($logger->log($data, $databaseLogger));
+
+});
 Route::get('/test', function () {
    return "without dd";
 });

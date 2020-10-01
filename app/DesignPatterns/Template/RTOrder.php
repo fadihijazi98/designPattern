@@ -4,7 +4,7 @@
 namespace App\DesignPatterns\Template;
 
 
-abstract class Order
+abstract class RTOrder
 {
     public function make()
     {

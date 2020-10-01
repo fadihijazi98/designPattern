@@ -4,7 +4,7 @@
 namespace App\DesignPatterns\Adapter;
 
 
-class Person
+class RTPerson
 {
     private $book;
     public function __construct(BookInterface $book)
