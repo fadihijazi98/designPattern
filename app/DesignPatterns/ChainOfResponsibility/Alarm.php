@@ -12,6 +12,6 @@ class Alarm extends HomeChecker
         if (!$home->alarmOn) {
             return new \Exception("alaram should be on");
         }
-        return $this->next();
+        return $this->next($home);
     }
 }

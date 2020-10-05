@@ -12,6 +12,6 @@ class Lock extends HomeChecker
         if (!$home->locked) {
             return new \Exception("the door mush be locked");
         }
-        return $this->next();
+        return $this->next($home);
     }
 }

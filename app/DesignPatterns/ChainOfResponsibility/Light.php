@@ -12,6 +12,6 @@ class Light extends HomeChecker
         if (!$home->lightOff) {
             return new \Exception("The light must be off");
         }
-        return $this->next();
+        return $this->next($home    );
     }
 }

@@ -61,14 +61,14 @@ Route::get("/strategy", function () {
 Route::get('/chain', function () {
 
     $home = new ChainOfResponsibility\HomeStatus();
-
     $light = new ChainOfResponsibility\Light();
     $alarm = new ChainOfResponsibility\Alarm();
     $lock = new ChainOfResponsibility\Lock();
-
     $lock->setSuccessor($alarm);
     $alarm->setSuccessor($light);
-
+    //$home->locked = false;
+    //$home->alarmOn = false;
+    //$home->lightOff = false;
     dd($lock->check($home));
 
 });
