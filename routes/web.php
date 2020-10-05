@@ -7,6 +7,7 @@ use App\DesignPatterns\Template;
 use App\DesignPatterns\Strategy;
 use App\DesignPatterns\ChainOfResponsibility;
 use App\DesignPatterns\Observer;
+use App\DesignPatterns\Specification;
 
 Route::get('/', function () {
     dd("Hello with valet, new domain name");
@@ -90,6 +91,19 @@ Route::get("/observer", function () {
     $login->detach($loginReporter);*/
 
     dd($login->fire());
+});
+
+Route::get('/specification', function () {
+    $customer = new Specification\Customer("gold");
+    $customer2 = new Specification\Customer("silver");
+    $customer3 = new Specification\Customer("bronze");
+    $customer4 = new Specification\Customer("gold");
+
+    $isGold = new Specification\CustomerIsGold($customer);
+    //dd($isGold->isSatisfy());
+
+    $repo = new Specification\CustomerRepository([$customer, $customer2, $customer3, $customer4]);
+    dd($repo->getCustomerThatSpecify(new Specification\CustomerIsSilver()));
 });
 
 Route::get('/colors', function () {
