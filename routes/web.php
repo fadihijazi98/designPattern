@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\DesignPatterns\Decorator;
 use App\DesignPatterns\Adapter;
 use App\DesignPatterns\Template;
 use App\DesignPatterns\Strategy;
@@ -12,6 +13,13 @@ Route::get('/', function () {
 });
 
 //RT: run time
+Route::get('/decorator', function () {
+    $basic = new Decorator\BasicInspection();
+    $withOil = new Decorator\OilInspection($basic);
+//    $withWheels = new Decorator\WheelsInspection($withOil);
+    dd("total cost for inspection: ".$withOil->cost() . ", description: " . $withOil->description());
+});
+
 Route::get('/adapter', function () {
     // the main purpose for adapter according my understand it's to make the code compatible
     $book = new Adapter\Book;
