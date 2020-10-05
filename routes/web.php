@@ -6,6 +6,7 @@ use App\DesignPatterns\Adapter;
 use App\DesignPatterns\Template;
 use App\DesignPatterns\Strategy;
 use App\DesignPatterns\ChainOfResponsibility;
+use App\DesignPatterns\Observer;
 
 Route::get('/', function () {
     dd("Hello with valet, new domain name");
@@ -17,7 +18,7 @@ Route::get('/decorator', function () {
     $basic = new Decorator\BasicInspection();
     $withOil = new Decorator\OilInspection($basic);
 //    $withWheels = new Decorator\WheelsInspection($withOil);
-    dd("total cost for inspection: ".$withOil->cost() . ", description: " . $withOil->description());
+    dd("total cost for inspection: " . $withOil->cost() . ", description: " . $withOil->description());
 });
 
 Route::get('/adapter', function () {
@@ -73,6 +74,23 @@ Route::get('/chain', function () {
 
 });
 
+Route::get("/observer", function () {
+    $login = new Observer\Login();
+
+    $loginHandler = new Observer\LoginHandler();
+    $emailNotify = new Observer\EmailNotify();
+    $loginReporter = new Observer\LoginReporter();
+
+    $login->attach($emailNotify);
+    $login->attach([$loginHandler, $loginReporter, $emailNotify]);
+    $login->attach($loginReporter)->attach($emailNotify)->attach($loginHandler);
+
+    /*$login->detach($loginHandler);
+    $login->detach($emailNotify);
+    $login->detach($loginReporter);*/
+
+    dd($login->fire());
+});
 
 Route::get('/colors', function () {
     $color = [
